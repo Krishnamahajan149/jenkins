@@ -1,4 +1,7 @@
- stages{
+pipeline {
+ agent any 
+
+stages{
      stage("git-pull"){
        steps {
            echo "git-pull"
@@ -16,4 +19,4 @@
          
      }
  }
-
+}
